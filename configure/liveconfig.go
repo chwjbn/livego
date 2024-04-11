@@ -91,7 +91,7 @@ var (
 	// value to True at compile time.
 	//
 	// go build -ldflags "-X 'github.com/chwjbn/livego/configure.BypassInit=true'" -o livego main.go
-	BypassInit string = ""
+	BypassInit string = "true"
 )
 
 func initLog() {
