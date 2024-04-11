@@ -8,11 +8,11 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/gwuhaolin/livego/configure"
-	"github.com/gwuhaolin/livego/protocol/api"
-	"github.com/gwuhaolin/livego/protocol/hls"
-	"github.com/gwuhaolin/livego/protocol/httpflv"
-	"github.com/gwuhaolin/livego/protocol/rtmp"
+	"github.com/chwjbn/livego/configure"
+	"github.com/chwjbn/livego/protocol/api"
+	"github.com/chwjbn/livego/protocol/hls"
+	"github.com/chwjbn/livego/protocol/httpflv"
+	"github.com/chwjbn/livego/protocol/rtmp"
 
 	log "github.com/sirupsen/logrus"
 )

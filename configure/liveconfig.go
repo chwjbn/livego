@@ -90,7 +90,7 @@ var (
 	// BypassInit can be used to bypass the init() function by setting this
 	// value to True at compile time.
 	//
-	// go build -ldflags "-X 'github.com/gwuhaolin/livego/configure.BypassInit=true'" -o livego main.go
+	// go build -ldflags "-X 'github.com/chwjbn/livego/configure.BypassInit=true'" -o livego main.go
 	BypassInit string = ""
 )
 

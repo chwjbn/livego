@@ -6,10 +6,10 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/gwuhaolin/livego/av"
-	"github.com/gwuhaolin/livego/configure"
-	"github.com/gwuhaolin/livego/protocol/rtmp"
-	"github.com/gwuhaolin/livego/protocol/rtmp/rtmprelay"
+	"github.com/chwjbn/livego/av"
+	"github.com/chwjbn/livego/configure"
+	"github.com/chwjbn/livego/protocol/rtmp"
+	"github.com/chwjbn/livego/protocol/rtmp/rtmprelay"
 
 	jwtmiddleware "github.com/auth0/go-jwt-middleware"
 	"github.com/dgrijalva/jwt-go"
