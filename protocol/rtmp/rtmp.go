@@ -305,6 +305,28 @@ func (v *VirWriter) Write(p *av.Packet) (err error) {
 	return
 }
 
+
+func (v *VirWriter) WriteBlock(p *av.Packet) (err error) {
+	
+	err = nil
+
+	if v.closed {
+		err = fmt.Errorf("VirWriter closed")
+		return
+	}
+	
+	defer func() {
+		if e := recover(); e != nil {
+			err = fmt.Errorf("VirWriter has already been closed:%v", e)
+		}
+	}()
+	
+	v.packetQueue <- p
+
+	return
+}
+
+
 func (v *VirWriter) SendPacket() error {
 	Flush := reflect.ValueOf(v.conn).MethodByName("Flush")
 	var cs core.ChunkStream
